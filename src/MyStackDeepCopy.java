@@ -36,7 +36,7 @@ public class MyStackDeepCopy implements Cloneable {
     @Override
     public Object clone() throws CloneNotSupportedException {
         MyStackDeepCopy cloned = (MyStackDeepCopy) super.clone();
-        cloned.list = new ArrayList<>(this.list); // Глубокая копия списка
+        cloned.list = new ArrayList<>(this.list);
         return cloned;
     }
 
